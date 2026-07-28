@@ -1,550 +1,337 @@
-# StarCore Foundation
+<div align="center">
 
-STARCORE — MASTER PROMPT
+# ⭐ StarCore
 
-You are a world-class team consisting of a Principal Product Designer, Banking Domain Expert, Staff Software Engineer, Solutions Architect, Security Engineer, UX Researcher, and Fintech Product Strategist.
+### The Next Generation of Banking.
 
-Your mission is to design and build StarCore, a premium digital bank that redefines modern banking in Africa and is built to scale globally.
+A next-generation digital banking ecosystem designed to deliver secure, intelligent, and premium financial experiences for individuals, businesses, and financial institutions.
 
-This is not a fintech clone.
+---
 
-This is not another banking app.
+[![License](https://img.shields.io/github/license/YOUR_USERNAME/starcore?style=for-the-badge)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/starcore?style=for-the-badge)](../../stargazers)
+[![Forks](https://img.shields.io/github/forks/YOUR_USERNAME/starcore?style=for-the-badge)](../../network/members)
+[![Issues](https://img.shields.io/github/issues/YOUR_USERNAME/starcore?style=for-the-badge)](../../issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/YOUR_USERNAME/starcore?style=for-the-badge)](../../pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/starcore?style=for-the-badge)](../../commits)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)]
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)]
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=nextdotjs)]
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)]
 
-This is the foundation of a future financial institution.
+---
 
-Every decision must reflect the standards expected of software trusted to move billions in value every day.
+**Modern Banking • AI Powered • Enterprise Grade • Mobile First**
 
-Vision
+</div>
 
-Build a banking experience that is:
+---
 
-Beautiful
+# Overview
 
-Fast
+StarCore is a modern digital banking platform built from first principles to redefine banking across Africa and beyond.
 
-Intelligent
+Rather than replicating traditional banking software, StarCore focuses on creating an intelligent, secure, and beautifully designed banking experience backed by enterprise-grade architecture.
 
-Secure
+The ecosystem includes customer-facing banking applications, internal banking operations, and a unified design system engineered for long-term scalability.
 
-Human
+---
 
-Premium
+# Vision
 
-The experience should feel effortless while hiding enormous technical sophistication behind the scenes.
+> Build the operating system for modern banking.
 
-Users should never feel like they are interacting with banking software.
+StarCore exists to make banking effortless.
 
-They should feel like money simply works.
+Every interaction is designed around speed, trust, intelligence, and simplicity.
 
-Design Philosophy
+---
 
-Design as if Apple designed the interface.
+# Core Products
 
-Design as if Stripe engineered the infrastructure.
+## 📱 Customer Mobile Banking
 
-Design as if Linear crafted the user experience.
+A mobile-first banking experience designed for everyday users.
 
-Design as if banking was invented today.
+### Features
 
-Avoid visual clutter.
+- Secure onboarding
+- Account management
+- Wallets
+- Transfers
+- QR Payments
+- Bill Payments
+- Cards
+- Savings
+- Spending Analytics
+- AI Banking Assistant
+- Security Center
+- Notifications
 
-Avoid unnecessary steps.
+---
 
-Reduce friction everywhere.
+## 💻 Customer Web Banking
 
-Every screen should have a clear purpose.
+Full-featured online banking for personal and business customers.
 
-Every interaction should feel intentional.
+### Features
 
-Product Name
+- Dashboard
+- Transfers
+- Cards
+- Statements
+- Spending Insights
+- Budgets
+- Account Management
+- Security Controls
+- AI Banking Assistant
 
-StarCore
+---
 
-Tagline:
+## 🛡 Internal Operations Console
 
-Banking. Reimagined.
+Enterprise platform for bank operations.
 
-Target Users
+### Modules
 
-Individuals
+- Customer Management
+- Transaction Monitoring
+- Fraud Detection
+- Compliance
+- Card Operations
+- Treasury
+- Customer Support
+- Analytics
+- Audit Logs
+- Reporting
+- Administration
 
-Professionals
+---
 
-Students
+## 🌐 Marketing Website
 
-Families
+Public-facing platform introducing the StarCore ecosystem.
 
-Freelancers
+Includes
 
-SMEs
+- Landing Pages
+- Product Pages
+- Security
+- Careers
+- Help Center
+- Documentation
+- FAQs
+- Contact
 
-Large Businesses
+---
 
-The experience must scale naturally across all customer segments.
+# Design Principles
 
-Build the Complete Banking Platform
+- Minimal
+- Premium
+- Accessible
+- Fast
+- Secure
+- Human-Centered
+- Mobile First
 
-Customer Banking
+---
 
-Design a complete digital banking experience including:
+# Technology Stack
 
-Secure onboarding
+## Frontend
 
-Identity verification flow
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
 
-Multi-factor authentication
+---
 
-Biometric authentication
+## Backend
 
-Dashboard
+- Node.js
+- PostgreSQL
+- Redis
+- REST APIs
+- Event-Driven Architecture
 
-Multiple account support
+---
 
-Savings
+## Infrastructure
 
-Current accounts
+- Docker
+- GitHub Actions
+- Vercel
+- Cloud Storage
+- CDN
+- CI/CD
 
-Joint accounts
+---
 
-Fixed deposits
+# Architecture
 
-Transaction history
-
-Statements
-
-Beneficiary management
-
-Scheduled payments
-
-Standing orders
-
-Recurring transfers
-
-Payments
-
-Support:
-
-Bank transfers
-
-Internal transfers
-
-QR payments
-
-Merchant payments
-
-Request money
-
-Split bills
-
-Airtime
-
-Data bundles
-
-Electricity
-
-Cable TV
-
-Internet
-
-Education payments
-
-Government payments
-
-Bulk payments
-
-Transfers should feel instant.
-
-Cards
-
-Include:
-
-Physical cards
-
-Virtual cards
-
-Freeze card
-
-Unfreeze card
-
-Spending limits
-
-Merchant controls
-
-Online payment toggle
-
-International payment toggle
-
-Card analytics
-
-One-time virtual cards
-
-Personal Finance
-
-Include:
-
-Spending insights
-
-Expense categorization
-
-Monthly reports
-
-Savings goals
-
-Budget planning
-
-Subscription tracking
-
-Cash flow prediction
-
-Financial health score
-
-AI Banking Assistant
-
-Create an intelligent banking assistant integrated directly into the application.
-
-The AI should understand natural language.
-
-Examples:
-
-Send ₦50,000 to David
-
-Freeze my card
-
-Show my biggest expenses
-
-Where did my salary go?
-
-Can I afford a new car?
-
-How much did I spend eating out?
-
-Predict my balance next month.
-
-The AI should proactively provide financial insights and recommendations.
-
-Security
-
-Build enterprise-grade banking security.
-
-Include:
-
-Biometrics
-
-Passkeys
-
-Device management
-
-Login history
-
-Trusted devices
-
-Risk scoring
-
-Fraud detection
-
-Behavioral authentication
-
-Session management
-
-Transaction verification
-
-Real-time fraud alerts
-
-Security should never compromise usability.
-
-Notifications
-
-Support:
-
-Push notifications
-
-SMS
-
-Email
-
-Real-time transaction alerts
-
-Security alerts
-
-Spending alerts
-
-Goal reminders
-
-Internal Operations Console
-
-Design an enterprise banking dashboard for internal staff.
-
-Include:
-
-Customer Management
-
-Customer lookup
-
-Customer profile
-
-Account overview
-
-Verification management
-
-Account status
-
-Customer support tools
-
-Transaction Operations
-
-Transaction monitoring
-
-Failed transaction investigation
-
-Chargeback handling
-
-Settlement monitoring
-
-Payment reconciliation
-
-Fraud Center
-
-Suspicious transaction detection
-
-Risk dashboard
-
-Account restrictions
-
-Investigation tools
-
-Fraud analytics
-
-Compliance
-
-KYC review
-
-AML monitoring
-
-Sanctions screening
-
-Audit logs
-
-Regulatory reporting
-
-Card Operations
-
-Card issuance
-
-Card replacement
-
-Card blocking
-
-Card lifecycle management
-
-Loan Operations
-
-Loan applications
-
-Approval workflow
-
-Risk assessment
-
-Repayment monitoring
-
-Treasury
-
-Liquidity monitoring
-
-Cash position
-
-Settlement status
-
-Internal fund movements
-
-Support Center
-
-Ticket management
-
-Live customer activity
-
-Account assistance
-
-Escalations
-
-Analytics
-
-Daily active users
-
-Transaction volume
-
-Revenue
-
-Fraud trends
-
-Customer growth
-
-Operational metrics
-
-Architecture
-
-Design the backend as a modern enterprise banking platform.
-
-Include:
-
-Double-entry ledger
-
-Event-driven architecture
-
-Modular services
-
-API Gateway
-
-PostgreSQL
-
-Redis
-
-Object storage
-
-Secure secrets management
-
-Horizontal scalability
-
-High availability
-
-Disaster recovery
-
-Immutable audit logs
-
-Monitoring and observability
-
-The ledger must always be the single source of truth.
-
-UI/UX
-
-Create an elegant premium interface.
-
-Use:
-
-Minimal layouts
-
-Beautiful typography
-
-Intelligent spacing
-
-Financial charts
-
-Rich transaction details
-
-Timeline-based history
-
-Elegant animations
-
-Responsive design
-
-Dark mode
-
-Light mode
-
-Avoid generic admin templates.
-
-Avoid generic fintech clones.
-
-Every screen should feel custom designed.
-
-Design System
-
-Generate a complete design language including:
-
-Color palette
-
-Typography
-
-Icons
-
-Buttons
-
-Forms
-
-Inputs
-
-Tables
-
-Charts
-
-Cards
-
-Dialogs
-
-Navigation
-
-Animation guidelines
-
-Spacing system
-
-Design tokens
-
-Deliverables
-
-Generate:
-
-Complete UI/UX
-
-Mobile app
-
-Web app
-
-Internal operations console
-
-User journeys
-
-Wireframes
-
-High-fidelity designs
-
-Component library
-
-Information architecture
-
-Database schema
-
-Backend architecture
-
-Frontend architecture
-
-API specification (for internal services)
-
-Folder structure
-
-Production-ready code
-
-Testing strategy
-
-Deployment configuration
-
-Technical documentation
-
-Quality Standard
-
-Assume StarCore will become one of Africa's most trusted financial institutions.
-
-Design for 100 million+ users, 99.99% uptime, enterprise-grade security, regulatory readiness, and long-term maintainability.
-
-Never generate placeholder designs, mock implementations, or superficial solutions.
-
-Think like you're building the next iconic banking platform—one that customers trust with their livelihoods and that engineers can confidently evolve for decades.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/984e1cd9-5808-42c1-8951-e062e0cad1db).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
 ```
+                    StarCore Ecosystem
+
+           Customer Mobile Application
+                     │
+                     │
+          Customer Web Banking
+                     │
+─────────────────────┼─────────────────────
+                     │
+              Core Banking Platform
+                     │
+─────────────────────┼─────────────────────
+                     │
+       Internal Banking Operations Console
+                     │
+─────────────────────┼─────────────────────
+                     │
+      Security • Fraud • Compliance • AI
+```
+
+---
+
+# Key Features
+
+## Banking
+
+- Accounts
+- Transfers
+- Savings
+- Cards
+- Statements
+- Beneficiaries
+
+## Payments
+
+- Internal Transfers
+- Bank Transfers
+- QR Payments
+- Bill Payments
+- Airtime
+- Utilities
+
+## Security
+
+- Biometrics
+- MFA
+- Device Trust
+- Fraud Detection
+- Risk Monitoring
+
+## Intelligence
+
+- AI Assistant
+- Spending Insights
+- Financial Reports
+- Budget Tracking
+
+---
+
+# Project Structure
+
+```
+apps/
+ ├── mobile
+ ├── web
+ ├── admin
+ └── marketing
+
+packages/
+ ├── ui
+ ├── design-system
+ ├── shared
+ ├── utils
+ └── config
+
+docs/
+
+assets/
+```
+
+---
+
+# Roadmap
+
+## Phase 1
+
+- [x] Brand Identity
+- [x] Design System
+- [x] Customer Mobile
+- [x] Customer Web
+- [x] Operations Console
+- [x] Landing Website
+
+---
+
+## Phase 2
+
+- [ ] Core Banking Engine
+- [ ] Authentication
+- [ ] Transfers
+- [ ] Cards
+- [ ] AI Banking
+- [ ] Notifications
+
+---
+
+## Phase 3
+
+- [ ] Fraud Engine
+- [ ] Compliance
+- [ ] Treasury
+- [ ] Analytics
+- [ ] Reporting
+
+---
+
+## Phase 4
+
+- [ ] Public Launch
+- [ ] Production Infrastructure
+- [ ] Scale Testing
+
+---
+
+# Philosophy
+
+StarCore is designed around one simple belief:
+
+> Banking software should disappear.
+
+Users shouldn't think about banking.
+
+Money should simply work.
+
+---
+
+# Contributing
+
+Contributions, discussions, feature requests, and ideas are welcome.
+
+Please open an issue before submitting large changes.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
+
+---
+
+<div align="center">
+
+### ⭐ StarCore
+
+**Banking. Reimagined.**
+
+Building the future of digital banking.
+
+</div>
