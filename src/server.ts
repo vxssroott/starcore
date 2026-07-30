@@ -1,3 +1,5 @@
+// src/server.ts
+
 import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
@@ -44,9 +46,33 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+// lightweight API routing for server-side endpoints used by the UI
+async function handleApiRequest(request: Request): Promise<Response | null> {
+  try {
+    const url = new URL(request.url);
+    // only handle POST endpoints for transfers for now
+    if (url.pathname === '/api/transfer/create' && request.method === 'POST') {
+      const handler = await import('./server/api/transferHandler');
+      return await handler.handleCreateIntent(request);
+    }
+    if (url.pathname === '/api/transfer/execute' && request.method === 'POST') {
+      const handler = await import('./server/api/transferHandler');
+      return await handler.handleExecuteIntent(request);
+    }
+  } catch (err) {
+    console.error('api handler error', err);
+    return new Response(JSON.stringify({ error: String(err) }), { status: 500, headers: { 'content-type': 'application/json' } });
+  }
+  return null;
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      // short-circuit our API endpoints before the react-start handler
+      const apiResp = await handleApiRequest(request);
+      if (apiResp) return apiResp;
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
