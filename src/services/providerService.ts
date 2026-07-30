@@ -2,7 +2,7 @@
 
 import { IntegrationRequest, IntegrationResponse } from '../integrations/types';
 import { providerManager } from '../integrations/manager';
-import { getCredentials } from '../integrations/credentials';
+import { getDecryptedCredentials } from '../integrations/credentials';
 import { isOpen, recordFailure, recordSuccess } from '../integrations/circuit';
 import { allow } from '../integrations/rateLimiter';
 import { signRequest } from '../integrations/requestSigning';
@@ -23,22 +23,9 @@ export async function sendToProvider(req: IntegrationRequest): Promise<Integrati
     throw new Error('rate limited');
   }
 
-  // fetch credentials (may be encrypted blob)
-  const creds = await getCredentials(req.provider);
-  let credentialObj: any = null;
-  if (creds && creds.encrypted) {
-    try {
-      credentialObj = JSON.parse(creds.encrypted);
-    } catch (err) {
-      // try base64 decode
-      try {
-        const decoded = Buffer.from(creds.encrypted, 'base64').toString('utf-8');
-        credentialObj = JSON.parse(decoded);
-      } catch (err2) {
-        credentialObj = { raw: creds.encrypted };
-      }
-    }
-  }
+  // fetch decrypted credentials (may return { decrypted: <object> })
+  const credsRow = await getDecryptedCredentials(req.provider);
+  const credentialObj: any = credsRow ? credsRow.decrypted : null;
 
   // attach signing header if secret present
   const signature = SECRET ? signRequest(SECRET, { id: req.id, type: req.type, payload: req.payload }) : undefined;
